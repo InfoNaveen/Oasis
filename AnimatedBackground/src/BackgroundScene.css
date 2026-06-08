@@ -1,0 +1,21 @@
+.background-scene-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0; /* Ensures it sits below the text but above the body background */
+  pointer-events: auto; /* Allows mouse events for R3F */
+  overflow: hidden;
+  /* Premium dynamic gradient for the glass to refract */
+  background: radial-gradient(
+    circle at var(--mouse-x, 50%) var(--mouse-y, 50%), 
+    #3b2075 0%, 
+    #130a2a 40%, 
+    #030108 100%
+  );
+}
+
+.background-scene-container canvas {
+  outline: none;
+}
