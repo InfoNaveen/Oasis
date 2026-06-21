@@ -1,4 +1,6 @@
-import BackgroundScene from './components/BackgroundScene'
+import { Suspense, lazy } from 'react'
+// @ts-expect-error — JSX component without type declarations
+const BackgroundScene = lazy(() => import('./components/BackgroundScene'))
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Problem from './components/Problem'
@@ -17,9 +19,11 @@ import { ArrowRight } from 'lucide-react'
 function App() {
   return (
     <>
-      <BackgroundScene />
+      <Suspense fallback={null}>
+        <BackgroundScene />
+      </Suspense>
       <Navbar />
-      <main style={{ position: 'relative', zIndex: 10 }}>
+      <main id="main-content" style={{ position: 'relative', zIndex: 10 }}>
         <Hero />
         <Problem />
         <Services />

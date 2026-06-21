@@ -5,12 +5,13 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   build: {
-    chunkSizeWarningLimit: 600,
+    chunkSizeWarningLimit: 1000,
     rollupOptions: {
       output: {
         manualChunks: (id: string) => {
           if (id.includes('node_modules/react') || id.includes('node_modules/react-dom')) return 'vendor'
           if (id.includes('node_modules/framer-motion')) return 'motion'
+          if (id.includes('node_modules/three') || id.includes('node_modules/@react-three')) return 'three'
         },
       },
     },

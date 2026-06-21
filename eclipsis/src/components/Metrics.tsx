@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef } from 'react'
 import { motion, useInView, useSpring, useTransform } from 'framer-motion'
 
 const metrics = [

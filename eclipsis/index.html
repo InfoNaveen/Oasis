@@ -3,19 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Primary Meta Tags -->
     <title>OASIS — Where Opportunities Find You | Digital Identity Agency</title>
-    <meta name="description" content="We build internship-ready digital identities — portfolio sites, LinkedIn overhauls, GitHub profiles, and resume refinements — for students and early-stage developers." />
-    <meta name="keywords" content="portfolio website, LinkedIn optimization, GitHub profile, resume, digital identity, student developer, internship" />
+    <meta name="description" content="We build internship-ready digital identities — portfolio sites, LinkedIn overhauls, GitHub profiles, and resume refinements — for students and early-stage developers who want to be discovered." />
+    <meta name="keywords" content="portfolio website, LinkedIn optimization, GitHub profile, resume, digital identity, student developer, internship, digital agency" />
     <meta name="author" content="OASIS" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://oasis.agency/" />
+
+    <!-- Open Graph -->
     <meta property="og:title" content="OASIS — Where Opportunities Find You" />
     <meta property="og:description" content="Portfolio sites, LinkedIn overhauls, GitHub profiles, and resume refinements for students who want to be discovered." />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://oasis.agency/" />
+    <meta property="og:site_name" content="OASIS" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="OASIS — Where Opportunities Find You" />
+    <meta name="twitter:description" content="Portfolio sites, LinkedIn overhauls, GitHub profiles, and resume refinements for students who want to be discovered." />
+
+    <!-- Security -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.emailjs.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https:; connect-src 'self' https://api.emailjs.com https://*.upstash.io; frame-ancestors 'none'; base-uri 'self'; form-action 'self';" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Mobile UX -->
+    <meta name="theme-color" content="#0f0e0d" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Fonts (preconnect + load) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "OASIS",
+      "alternateName": "OASIS Agency",
+      "url": "https://oasis.agency",
+      "description": "Digital identity agency for students and early-stage developers. Portfolio sites, LinkedIn optimization, GitHub profiles, and resume refinements.",
+      "slogan": "Where Opportunities Find You",
+      "priceRange": "₹499 - ₹1,299",
+      "founder": {
+        "@type": "Person",
+        "name": "Naveen Patil"
+      },
+      "areaServed": "India",
+      "serviceType": ["Portfolio Website Design", "LinkedIn Optimization", "GitHub Profile Enhancement", "Resume Writing"],
+      "sameAs": [
+        "https://github.com/InfoNaveen",
+        "https://linkedin.com/in/naveen-patil-builder"
+      ]
+    }
+    </script>
   </head>
   <body>
+    <!-- Skip to content — accessibility -->
+    <a href="#main-content" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:9999;padding:12px 24px;background:#c9a26d;color:#0f0e0d;font-weight:600;text-decoration:none;border-radius:0 0 6px 0;" onfocus="this.style.position='fixed';this.style.left='0';this.style.top='0';this.style.width='auto';this.style.height='auto';" onblur="this.style.position='absolute';this.style.left='-9999px';this.style.width='1px';this.style.height='1px';">
+      Skip to main content
+    </a>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
