@@ -1,4 +1,4 @@
-import { Suspense, lazy } from 'react'
+import { Suspense, lazy, Component, type ReactNode } from 'react'
 // @ts-expect-error — JSX component without type declarations
 const BackgroundScene = lazy(() => import('./components/BackgroundScene'))
 import Navbar from './components/Navbar'
@@ -16,12 +16,28 @@ import FinalCTA from './components/FinalCTA'
 import Footer from './components/Footer'
 import { ArrowRight } from 'lucide-react'
 
+class SceneErrorBoundary extends Component<{ children: ReactNode }, { hasError: boolean }> {
+  constructor(props: { children: ReactNode }) {
+    super(props)
+    this.state = { hasError: false }
+  }
+  static getDerivedStateFromError() {
+    return { hasError: true }
+  }
+  render() {
+    if (this.state.hasError) return null
+    return this.props.children
+  }
+}
+
 function App() {
   return (
     <>
-      <Suspense fallback={null}>
-        <BackgroundScene />
-      </Suspense>
+      <SceneErrorBoundary>
+        <Suspense fallback={null}>
+          <BackgroundScene />
+        </Suspense>
+      </SceneErrorBoundary>
       <Navbar />
       <main id="main-content" style={{ position: 'relative', zIndex: 10 }}>
         <Hero />
