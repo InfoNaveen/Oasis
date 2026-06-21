@@ -11,6 +11,7 @@ import Showcase from './components/Showcase'
 import Pricing from './components/Pricing'
 import Process from './components/Process'
 import Team from './components/Team'
+import FounderStory from './components/FounderStory'
 import Teach from './components/Teach'
 import Testimonials from './components/Testimonials'
 import FAQ from './components/FAQ'
@@ -52,6 +53,7 @@ function App() {
         <Pricing />
         <Process />
         <Team />
+        <FounderStory />
         <Teach />
         <Testimonials />
         <Consequence />
