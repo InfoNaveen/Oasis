@@ -61,13 +61,13 @@ export default function FinalCTA() {
           <div>
             <span className="section-label">Get Started</span>
             <h2 className="display-lg" style={{ marginTop: 8, marginBottom: 16 }}>
-              Stop being<br /><span className="grad-accent">invisible online.</span>
+              Ready to get<br /><span className="grad-accent">discovered?</span>
             </h2>
             <p className="body-lg" style={{ marginBottom: 32 }}>
-              Fill the form. Naveen personally reviews every submission and replies within 24 hours.
+              Submit the form below. We review every message personally and reply within 24 hours.
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 13 }}>
-              {['No templates — everything custom', 'Results within 7 days', '100% satisfaction or we revise — no questions asked'].map((item, i) => (
+              {['No templates — every line is custom-built', 'Delivered in 3–7 working days', 'Not satisfied? We revise until you are — no questions asked'].map((item, i) => (
                 <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 10, fontSize: 14, color: 'var(--color-text-muted)' }}>
                   <CheckCircle size={14} color="var(--color-accent)" />{item}
                 </div>

@@ -4,6 +4,7 @@ const BackgroundScene = lazy(() => import('./components/BackgroundScene'))
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Problem from './components/Problem'
+import Results from './components/Results'
 import Services from './components/Services'
 import Showcase from './components/Showcase'
 import Pricing from './components/Pricing'
@@ -42,6 +43,7 @@ function App() {
       <main id="main-content" style={{ position: 'relative', zIndex: 10 }}>
         <Hero />
         <Problem />
+        <Results />
         <Services />
         <Showcase />
         <Pricing />
@@ -64,7 +66,7 @@ function App() {
         textDecoration: 'none', boxShadow: '0 8px 32px var(--color-glow)',
         minHeight: 48,
       }}>
-        Get Started <ArrowRight size={14} />
+        Start Now <ArrowRight size={14} />
       </a>
     </>
   )

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
 
-const stats = ['50+ profiles built', '₹499 starts from', '7-day avg. delivery', '4.9★ rating']
+const stats = ['50+ profiles shipped since 2024', '₹499 starting price', '5-day avg. delivery', '4.9★ client satisfaction']
 const colleges = ['BMSCE','PESIT','Manipal','VTU','RVCE','BMS Institute of Technology','Christ University','Jain University']
 
 export default function Hero() {
@@ -20,14 +20,14 @@ export default function Hero() {
 
           <motion.p className="body-lg" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.15 }}
             style={{ maxWidth: 580, marginBottom: 36, color: 'var(--color-text-secondary)' }}>
-            We build internship-ready digital identities — portfolio sites, LinkedIn overhauls, GitHub profiles, and resume refinements — for students and early-stage developers who want to be discovered.
+            We turn forgettable online profiles into digital identities that get recruiters, founders, and hiring managers to pay attention — in 5 days or less.
           </motion.p>
 
           <motion.div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginBottom: 32 }} initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.25 }}>
             {/* Primary CTA: bg-accent text-bg-primary */}
-            <a href="#pricing" className="btn-primary" style={{ padding: '14px 28px', fontSize: 14, flex: '0 0 auto' }}>See Pricing <ArrowRight size={15} /></a>
+            <a href="#work" className="btn-primary" style={{ padding: '14px 28px', fontSize: 14, flex: '0 0 auto' }}>View Our Work <ArrowRight size={15} /></a>
             {/* Secondary CTA: border-border-medium text-text-primary hover:border-accent */}
-            <a href="#work" className="btn-ghost" style={{ padding: '14px 28px', fontSize: 14, flex: '0 0 auto' }}>View Our Work</a>
+            <a href="#contact" className="btn-ghost" style={{ padding: '14px 28px', fontSize: 14, flex: '0 0 auto' }}>Start a Conversation</a>
           </motion.div>
 
           {/* Stats bar — text-text-muted per spec */}
@@ -44,7 +44,7 @@ export default function Hero() {
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.45 }}
             style={{ fontFamily: 'var(--font-mono)', fontSize: 12, color: 'var(--color-text-muted)', marginBottom: 32, padding: '10px 14px', border: '1px solid var(--color-border-medium)', borderLeft: '3px solid var(--color-accent)', borderRadius: '0 var(--r-md) var(--r-md) 0', background: 'rgba(201,162,109,0.04)', wordBreak: 'break-word' }}>
             <span style={{ color: 'var(--color-code-comment)' }}>{'// '}</span>
-            <span style={{ color: 'var(--color-text-primary)' }}>Every site ships with HTTPS, sanitized forms, and clean code.</span>
+            <span style={{ color: 'var(--color-text-primary)' }}>Custom code. Zero templates. Deployed and indexed.</span>
           </motion.div>
         </div>
 

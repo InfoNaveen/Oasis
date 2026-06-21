@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion'
 
 const steps = [
-  { num: '01', title: 'Submit', time: '5 min', desc: 'Fill the form with your goals, tech stack, and which package you want. No long calls. No lengthy onboarding. Just the essentials.' },
-  { num: '02', title: 'We Build', time: '3–7 days', desc: 'Naveen personally works on your profile — no templates, no freelancer handoffs. You get a builder, not a vendor.' },
-  { num: '03', title: 'Review & Refine', time: 'Your call', desc: "Preview shared via a private link. You give feedback. We revise until you're 100% happy — no awkward 'that's out of scope' conversations." },
-  { num: '04', title: 'Go Live', time: 'Done', desc: 'Your new digital identity is deployed, indexed, and ready for recruiters. We stay available for 7 days post-delivery for any questions.' },
+  { num: '01', title: 'Submit', time: '5 min', desc: 'Fill a short form with your goals, tech stack, and package. No sales call. No lengthy onboarding.' },
+  { num: '02', title: 'We Build', time: '3–7 days', desc: 'Your profile is handled personally by a developer on the team — not a template, not outsourced.' },
+  { num: '03', title: 'Review & Refine', time: 'Your call', desc: 'Preview via a private link. Give feedback. We revise until you\'re 100% happy — no "out of scope" surprises.' },
+  { num: '04', title: 'Go Live', time: 'Done', desc: 'Deployed, indexed, and recruiter-ready. We stay available for 7 days post-delivery for any tweaks.' },
 ]
 
 export default function Process() {
@@ -13,7 +13,7 @@ export default function Process() {
       <div className="container">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} style={{ textAlign: 'center', marginBottom: 56 }}>
           <span className="section-label">How It Works</span>
-          <h2 className="display-lg" style={{ marginTop: 8 }}>Simple process. Real results.</h2>
+          <h2 className="display-lg" style={{ marginTop: 8 }}>Four steps. One week. Done.</h2>
         </motion.div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 24 }} className="process-grid">

@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion'
 
 const cards = [
-  { icon: '👁️', title: '"Your portfolio looks like a Wix template from 2019"', body: "Recruiters see hundreds of identical portfolios. Generic = rejected. If your site isn't memorable in 3 seconds, they've already moved on." },
-  { icon: '💀', title: '"Your LinkedIn headline says \'Student at [College]\'"', body: "That's not a headline. That's a missed opportunity. Recruiters search by keywords, skills, and roles — not college names." },
-  { icon: '🕳️', title: '"Your GitHub has 3 repos, all named \'test\' or \'project1\'"', body: 'Your GitHub IS your portfolio to a technical recruiter. Empty pins and zero READMEs signal zero seriousness.' },
+  { icon: '👁️', title: '"Your portfolio blends in with 500 others"', body: "Recruiters see hundreds of identical portfolios every week. If yours doesn't make an impression in 3 seconds, it's already closed." },
+  { icon: '💀', title: '"Your LinkedIn headline says \'Student at [College]\'"', body: "That's not a headline — it's a placeholder. Recruiters search by skills, roles, and keywords. Your college name won't show up in any of those." },
+  { icon: '🕳️', title: '"Your GitHub has 3 repos, all named \'test\'"', body: "An empty GitHub tells a recruiter you don't code outside assignments. Pinned repos with real READMEs flip that signal completely." },
 ]
 
 export default function Problem() {
@@ -28,7 +28,7 @@ export default function Problem() {
 
         <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.3 }}
           style={{ textAlign: 'center', marginTop: 40, fontFamily: 'var(--font-display)', fontSize: 18, fontWeight: 700, color: 'var(--color-accent)' }}>
-          We fix all three. Fast. Affordably. Personally.
+          We fix all three — with real work, real fast.
         </motion.p>
       </div>
       <style>{`@media(max-width:900px){.prob-grid{grid-template-columns:1fr!important;}}@media(max-width:600px){.prob-grid{gap:1px!important;}}`}</style>

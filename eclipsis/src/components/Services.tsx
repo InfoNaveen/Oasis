@@ -2,12 +2,12 @@ import { motion } from 'framer-motion'
 import { Layout, Users, Code2, FileText, Hammer, Layers } from 'lucide-react'
 
 const services = [
-  { icon: Layout,   title: 'Portfolio Websites',       badge: 'Most Popular', desc: 'A fast, SEO-optimized personal site built to make recruiters stop scrolling. Custom domain setup included. No templates — every site is built from scratch.' },
-  { icon: Users,    title: 'LinkedIn Optimization',    badge: null,           desc: "Complete rewrite of your headline, about section, experience, and skills — keyword-optimized for recruiter search and ATS discoverability. We've seen 4x+ profile view jumps." },
-  { icon: Code2,    title: 'GitHub Enhancement',       badge: null,           desc: 'Profile README, pinned repos strategically chosen, contribution graph advice, and project descriptions that read like product launches — not homework submissions.' },
-  { icon: FileText, title: 'Resume & CV Refinement',   badge: null,           desc: 'ATS-optimized resume with quantified achievements, strong action verbs, and clean formatting. Designed for both automated screeners and human eyes.' },
-  { icon: Hammer,   title: 'Project Build for GitHub', badge: 'New',          desc: 'Need a real project for your submission, hackathon, or GitHub? We design, build, and deploy it — documented, clean codebase, 100% yours.' },
-  { icon: Layers,   title: 'Full Digital Makeover',    badge: 'Best Value',   desc: 'All five services bundled. The complete transformation — from invisible to interview-ready. Our most popular package for final-year students entering placement season.' },
+  { icon: Layout,   title: 'Portfolio Websites',       badge: 'Most Popular', desc: 'A personal site built from scratch — fast, SEO-ready, and deployed on your own domain. Designed so recruiters stop scrolling when they land on it.' },
+  { icon: Users,    title: 'LinkedIn Optimization',    badge: null,           desc: 'Complete rewrite of your headline, about section, experience, and skills — keyword-tuned for recruiter search and ATS. Clients have seen up to 4× profile views within 30 days.' },
+  { icon: Code2,    title: 'GitHub Enhancement',       badge: null,           desc: 'Profile README, pinned repos, and project descriptions that read like product launches. We turn a blank GitHub into proof that you build real things.' },
+  { icon: FileText, title: 'Resume & CV Refinement',   badge: null,           desc: 'ATS-friendly resume with quantified wins and strong action verbs. We rewrite bullets so achievements land — not just responsibilities.' },
+  { icon: Hammer,   title: 'Project Build for GitHub', badge: 'New',          desc: 'A real, deployed project for your portfolio, hackathon, or resume. Clean code, proper documentation, and ready to walk an interviewer through.' },
+  { icon: Layers,   title: 'Full Digital Makeover',    badge: 'Best Value',   desc: 'All five services bundled — portfolio, LinkedIn, GitHub, resume, and a project. One transformation, every platform covered. Our most chosen package during placement season.' },
 ]
 
 export default function Services() {
@@ -17,6 +17,7 @@ export default function Services() {
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} style={{ marginBottom: 52 }}>
           <span className="section-label">Services</span>
           <h2 className="display-lg" style={{ marginTop: 8 }}>Everything you need<br />to stand out online</h2>
+          <p style={{ fontSize: 14, color: 'var(--color-text-secondary)', marginTop: 12, maxWidth: 520 }}>Not just design. Strategy, copywriting, deployment, and optimization — done for you.</p>
         </motion.div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 1, background: 'var(--color-border-subtle)', borderRadius: 'var(--r-lg)', overflow: 'hidden' }} className="svc-grid">

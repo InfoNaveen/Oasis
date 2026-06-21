@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion'
 
 const metrics = [
-  { val: '↑ 4.2×', label: 'recruiter views' },
-  { val: '0 → 3', label: 'live projects in 5 days' },
+  { val: '↑ 4×', label: 'profile views (within 60 days)' },
+  { val: '0 → 3', label: 'live projects in under a week' },
 ]
 const strip = [
-  { icon: '🏆', text: '12 internship offers traced back to OASIS work' },
-  { icon: '📩', text: '80% of clients report increased recruiter messages within 30 days' },
-  { icon: '⚡', text: 'Avg. turnaround: 5 days' },
+  { icon: '🏆', text: 'Clients have received internship offers within 3 weeks of delivery' },
+  { icon: '📩', text: '4 out of 5 clients report more recruiter messages within 30 days' },
+  { icon: '⚡', text: 'Average delivery: 5 working days from submission' },
 ]
 
 function BrowserMockup() {
@@ -46,7 +46,7 @@ export default function Showcase() {
       <div className="container">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} style={{ marginBottom: 52 }}>
           <span className="section-label">Our Work</span>
-          <h2 className="display-lg" style={{ marginTop: 8 }}>Real results for real students</h2>
+          <h2 className="display-lg" style={{ marginTop: 8 }}>See what we deliver</h2>
         </motion.div>
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 40, alignItems: 'center', marginBottom: 56 }} className="showcase-grid">
