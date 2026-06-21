@@ -1,5 +1,13 @@
 import { motion } from 'framer-motion'
-import { ExternalLink, GitFork, Link, Globe } from 'lucide-react'
+import { ExternalLink, GitFork, Link, Globe, Award } from 'lucide-react'
+
+const credentials = [
+  'AWS ImpactX Finalist',
+  '7× Hackathon Finalist',
+  'GSSoC Open Source Contributor',
+  'Full-Stack Developer & AI Security Engineer',
+  '50+ client profiles delivered',
+]
 
 const team = [
   {
@@ -33,9 +41,26 @@ export default function Team() {
     <section id="team" className="section" style={{ background: 'var(--color-bg-primary)' }}>
       <div className="container">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} style={{ marginBottom: 52 }}>
-          <span className="section-label">The Team</span>
-          <h2 className="display-lg" style={{ marginTop: 8 }}>Built by developers,<br />for developers</h2>
-          <p className="body-lg" style={{ maxWidth: 540, marginTop: 14 }}>Three engineers who got tired of watching talented students get overlooked because of weak online presence. So we built the fix.</p>
+          <span className="section-label">Why We're Different</span>
+          <h2 className="display-lg" style={{ marginTop: 8 }}>Most agencies build websites.<br /><span style={{ color: 'var(--color-accent)' }}>We build digital identities.</span></h2>
+          <p className="body-lg" style={{ maxWidth: 560, marginTop: 14 }}>A portfolio without LinkedIn is incomplete. A LinkedIn without GitHub is weak. A GitHub without projects doesn't convert. OASIS fixes all three — together.</p>
+        </motion.div>
+
+        {/* Founder credibility */}
+        <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}
+          style={{ background: 'var(--color-surface-1)', border: '1px solid var(--color-border-medium)', borderLeft: '3px solid var(--color-accent)', borderRadius: '0 var(--r-lg) var(--r-lg) 0', padding: '24px 28px', marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 14 }}>
+            <Award size={16} color="var(--color-accent)" strokeWidth={1.5} />
+            <span style={{ fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--color-accent)' }}>Why OASIS Exists</span>
+          </div>
+          <p style={{ fontSize: 13, color: 'var(--color-text-secondary)', lineHeight: 1.75, marginBottom: 16 }}>
+            After watching talented students get ignored because of weak online presence, we built OASIS to help them get discovered. Here's what the team brings to every project:
+          </p>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+            {credentials.map(c => (
+              <span key={c} style={{ fontFamily: 'var(--font-mono)', fontSize: 10, padding: '4px 10px', background: 'var(--color-surface-3)', color: 'var(--color-text-muted)', border: '1px solid var(--color-border-subtle)', borderRadius: '100px' }}>{c}</span>
+            ))}
+          </div>
         </motion.div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 16 }} className="team-grid">

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
 
-const stats = ['50+ profiles shipped since 2024', '₹499 starting price', '5-day avg. delivery', '4.9★ client satisfaction']
+const stats = ['50+ profiles shipped since 2024', '₹999 starting price', '5-day avg. delivery', '4.9★ client satisfaction']
 const colleges = ['BMSCE','PESIT','Manipal','VTU','RVCE','BMS Institute of Technology','Christ University','Jain University']
 
 export default function Hero() {

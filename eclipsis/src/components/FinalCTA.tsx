@@ -8,7 +8,7 @@ const EMAIL_SERVICE = 'service_t1eh0d2'
 const EMAIL_TEMPLATE = 'template_p85yx0r'
 const EMAIL_PUBLIC_KEY = 'rnUSdZeNbzBmDbPnW'
 
-const packages = ['Starter — ₹499','Builder — ₹899','Pro — ₹1,299','Custom / Founders','Session Booking']
+const packages = ['Starter — ₹999','Builder — ₹1,999','Pro — ₹3,999','Custom / Founders','Session Booking']
 const sources = ['LinkedIn','Instagram','Friend / Referral','College','Hackathon','Google']
 
 function sanitize(s: string, max: number) {
@@ -72,6 +72,23 @@ export default function FinalCTA() {
                   <CheckCircle size={14} color="var(--color-accent)" />{item}
                 </div>
               ))}
+            </div>
+
+            {/* Guarantee */}
+            <div style={{ marginTop: 28, padding: '18px 20px', background: 'var(--color-surface-1)', border: '1px solid var(--color-border-medium)', borderLeft: '3px solid var(--color-accent)', borderRadius: '0 var(--r-md) var(--r-md) 0' }}>
+              <div style={{ fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--color-accent)', marginBottom: 8 }}>Our Promise</div>
+              <p style={{ fontSize: 13, color: 'var(--color-text-secondary)', lineHeight: 1.7 }}>
+                If you're not satisfied with the first delivery, we keep revising until you are. No extra charges. No hidden fees. No surprises.
+              </p>
+            </div>
+
+            {/* Capacity urgency */}
+            <div style={{ marginTop: 16, padding: '14px 20px', background: 'var(--color-surface-2)', border: '1px solid var(--color-border-subtle)', borderRadius: 'var(--r-md)', display: 'flex', alignItems: 'center', gap: 12 }}>
+              <div style={{ width: 8, height: 8, borderRadius: '50%', background: 'var(--color-success)', flexShrink: 0, animation: 'pulse-dot 2s ease-in-out infinite' }} />
+              <div>
+                <span style={{ fontSize: 13, color: 'var(--color-text-primary)', fontWeight: 500 }}>We take 5 new clients per week to maintain quality.</span>
+                <span style={{ display: 'block', fontSize: 12, color: 'var(--color-accent)', fontFamily: 'var(--font-mono)', marginTop: 2 }}>3 slots remaining this week.</span>
+              </div>
             </div>
           </div>
 

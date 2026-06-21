@@ -13,6 +13,7 @@ const faqs = [
   { q: "I'm a founder, not a student. Can you help me?", a: "Yes — early-stage founders are a big part of who we work with. A polished LinkedIn and portfolio matters just as much when you're fundraising or hiring. Message us for a custom scope." },
   { q: "Do you work with teams or colleges?", a: "Yes. If you're a club, college society, or startup team that wants a group of profiles built, we offer bulk pricing. DM or email us for details." },
   { q: "How quickly will I see results?", a: "Delivery takes 3–7 days depending on your package. Many clients report increased recruiter engagement within 2–4 weeks of going live." },
+  { q: "Why is OASIS so affordable?", a: "Because we're a student-first agency. Our goal is helping ambitious students build a professional online presence without paying agency-level pricing. We keep costs low by working directly — no middlemen, no overhead, no unnecessary meetings." },
 ]
 
 export default function FAQ() {

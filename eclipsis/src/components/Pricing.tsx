@@ -2,11 +2,11 @@ import { motion } from 'framer-motion'
 import { Check, ArrowRight } from 'lucide-react'
 
 const plans = [
-  { name: 'Starter', price: '₹499', featured: false, desc: 'The essentials before applications open. LinkedIn, GitHub, and resume — covered in 3 days.',
+  { name: 'Starter', price: '₹999', featured: false, desc: 'The essentials before applications open. LinkedIn, GitHub, and resume — covered in 3 days.',
     features: ['LinkedIn rewrite (headline + about + skills)', 'GitHub README setup', 'Resume formatting review', '3-day delivery', '1 revision round'], cta: 'Get Starter' },
-  { name: 'Builder', price: '₹899', featured: true, desc: 'The complete package for placement season. Portfolio + profiles + resume — all interview-ready.',
+  { name: 'Builder', price: '₹1,999', featured: true, desc: 'The complete package for placement season. Portfolio + profiles + resume — all interview-ready.',
     features: ['Everything in Starter', 'Portfolio website (deployed + custom domain)', 'SEO meta tags + Open Graph', '5-day delivery', '2 revision rounds'], cta: 'Get Builder' },
-  { name: 'Pro', price: '₹1,299', featured: false, desc: 'Full transformation for final-year students and early founders who need every platform covered.',
+  { name: 'Pro', price: '₹3,999', featured: false, desc: 'Full transformation for final-year students and early founders who need every platform covered.',
     features: ['Everything in Builder', 'GitHub project build (real, deployed)', 'Full LinkedIn optimization + recommendations strategy', 'ATS CV + resume design', 'Priority 7-day delivery', 'Unlimited revisions (within scope)'], cta: 'Get Pro' },
 ]
 
@@ -67,7 +67,7 @@ export default function Pricing() {
           <div style={{ padding: '18px 28px', background: 'var(--color-surface-1)', border: '1px solid var(--color-border-medium)', borderRadius: 'var(--r-lg)', maxWidth: 480, width: '100%', textAlign: 'center' }}>
             <div style={{ fontFamily: 'var(--font-mono)', fontSize: 10, color: 'var(--color-text-muted)', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: 10 }}>// value comparison</div>
             <p style={{ fontSize: 13, color: 'var(--color-text-secondary)', lineHeight: 1.7 }}>
-              A freelance designer charges ₹2,000+ for just a portfolio site. A LinkedIn coach charges ₹1,500+ per session. With OASIS, you get both — plus GitHub, resume, and a real project — starting at <span style={{ color: 'var(--color-accent)', fontWeight: 600 }}>₹499</span>.
+              A freelance designer charges ₹5,000+ for just a portfolio site. A LinkedIn coach charges ₹3,000+ per session. With OASIS, you get both — plus GitHub, resume, and a real project — starting at <span style={{ color: 'var(--color-accent)', fontWeight: 600 }}>₹999</span>.
             </p>
           </div>
 

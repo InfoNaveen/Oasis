@@ -6,6 +6,7 @@ import Hero from './components/Hero'
 import Problem from './components/Problem'
 import Results from './components/Results'
 import Services from './components/Services'
+import Audience from './components/Audience'
 import Showcase from './components/Showcase'
 import Pricing from './components/Pricing'
 import Process from './components/Process'
@@ -14,6 +15,7 @@ import Teach from './components/Teach'
 import Testimonials from './components/Testimonials'
 import FAQ from './components/FAQ'
 import FinalCTA from './components/FinalCTA'
+import Consequence from './components/Consequence'
 import Footer from './components/Footer'
 import { ArrowRight } from 'lucide-react'
 
@@ -45,12 +47,14 @@ function App() {
         <Problem />
         <Results />
         <Services />
+        <Audience />
         <Showcase />
         <Pricing />
         <Process />
         <Team />
         <Teach />
         <Testimonials />
+        <Consequence />
         <FAQ />
         <FinalCTA />
       </main>
